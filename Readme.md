@@ -1,7 +1,7 @@
 
 # ast-tree
 
-  Get a tree representation of the AST. Works with acorn or esprima.
+  Get a tree representation of the AST. Depth-first Search. Works with acorn or esprima.
 
   ![tree](https://i.cloudup.com/WsXWCO2jab.png)
 
