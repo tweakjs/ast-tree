@@ -1,0 +1,16 @@
+{
+  "name": "ast-tree",
+  "version": "0.0.1",
+  "description": "Get a tree representation of the AST",
+  "keywords": [],
+  "author": "Matthew Mueller <mattmuelle@gmail.com>",
+  "repository": { "type": "git", "url": "git://github.com/MatthewMueller/ast-tree.git" },
+  "dependencies": {
+    "walk-ast": "*",
+    "colors": "*"
+  },
+  "devDependencies": {
+    "acorn": "*"
+  },
+  "main": "index"
+}
