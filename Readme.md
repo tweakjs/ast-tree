@@ -1,9 +1,24 @@
 
 # ast-tree
 
-  Get a tree representation of the AST
+  Get a tree representation of the AST. Works with acorn or esprima.
 
-## License 
+  ![tree](https://i.cloudup.com/WsXWCO2jab.png)
+
+## Install
+
+    npm install ast-tree
+
+## Example
+
+```js
+var tree = require('..');
+var nodes = acorn.parse(str);
+var out = tree(nodes);
+console.log(out);
+```
+
+## License
 
 (The MIT License)
 
