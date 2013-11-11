@@ -3,7 +3,7 @@
 
   Get a tree representation of the AST. Depth-first Search. Works with acorn or esprima.
 
-  ![tree](https://i.cloudup.com/cXDDkKDmr8K.png)
+  ![tree](https://i.cloudup.com/Y42CU862it.png)
 
 ## Install
 
