@@ -22,9 +22,10 @@ module.exports = tree;
 function tree(nodes) {
   var str = [];
 
-  walk(nodes, function(node, depth) {
+  walk(nodes, function(node) {
     var line = [];
-    var prefix = repeat('-', depth);
+    var d = depth(node);
+    var prefix = repeat('-', d);
 
     line.push(prefix.grey);
     line.push(node.type);
@@ -36,6 +37,21 @@ function tree(nodes) {
   });
 
   return str.join('\n');
+}
+
+/**
+ * Depth
+ */
+
+function depth(node) {
+  var d = 0;
+  var parent = node.parentNode;
+
+  while(parent) {
+    parent = parent.parentNode;
+    ++d;
+  }
+  return d;
 }
 
 /**
